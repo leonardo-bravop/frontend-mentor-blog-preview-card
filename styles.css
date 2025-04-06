@@ -26,8 +26,15 @@
 }
 
 .card {
-    @apply bg-white w-[327px] sm:w-96 my-auto mx-auto p-6 rounded-[20px] flex flex-col gap-6 outline-1 box-border;
+    @apply bg-white w-[327px] sm:w-96 my-auto mx-auto p-6
+        rounded-[20px] flex flex-col gap-6 outline-1 box-border cursor-pointer;
     box-shadow: 8px 8px 0 black;
+    transition: box-shadow 0.1s ease-out;
+}
+
+.card:hover {
+    box-shadow: 16px 16px 0 black;
+    transition: box-shadow 0.1s ease-in;
 }
 
 .text-preset-1 {
